@@ -1,5 +1,5 @@
 import json
-
+import camelcase
 
 # some JSON:
 x1 =  '{ "name":"John", "age":30, "city":"New York"}'
@@ -51,3 +51,24 @@ x = {
 # sort the result alphabetically by keys:
 print(json.dumps(x, indent=4, sort_keys=True))
 
+
+
+c = camelcase.CamelCase()
+
+txt = "hello world"
+
+print(c.hump(txt))
+
+# try:
+#   print("Hello")
+# except:
+#   print("Something went wrong")
+# else:
+#   print("Nothing went wrong")
+
+try:
+  print(x)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
