@@ -72,3 +72,10 @@ except:
   print("Something went wrong")
 finally:
   print("The 'try except' is finished")
+
+  username = input("Enter username:")
+  print("Username is: " + username)
+
+  price = 49
+  txt = "The price is {} dollars"
+  print(txt.format(price))
